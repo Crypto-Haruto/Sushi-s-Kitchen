@@ -1,1 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  display: flex;
+  min-height: 40vh;
+  flex-direction: column;
+}
 
+header {
+  background-color: #008cb4;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.about h2,
+.invite h2,
+.note h2 {
+  color: #333;
+}
+
+.about p,
+.invite p,
+.note p{
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0062a0;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,.4);
+}
+.bruh {
+  letter-spacing: 0.5px;
+}
+.bruh:hover {
+  position: relative;
+  transition: 0s;
+  color: #333;
+  cursor: pointer;
+  transform: scaleX(2);
+}
+.btn:hover {
+  color: #0063a0;
+  background: mistyrose;
+  transition: 1s;
+  animation: animate1 2s infinite;
+}
+@keyframes animate1 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(45deg);
+  }
+  50% {
+    transform: rotateZ(90deg);
+  }
+  75% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+section h2 {
+  text-align: center;
+}
+.bot-btn {
+  display: inline-block;
+  background-color: #008000;;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,.4);
+  align-items: center;
+  justify-content: center;
+}
+.bot-btn:hover {
+  color: #008000;
+  background: #01c7fc;
+  transition: 1s;
+  animation: animate1 3s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+}
+
+/* Nav list */
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  background: #333;
+}
+
+li {
+  display: inline;
+}
+li:hover {
+  letter-spacing: 3px;
+  transition: 1s;
+}
+/* Footer */
+  footer {
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+  }
+
+.name,
+.join{
+  text-align: center;
+  color: #333;
+}
+@media (max-width: 969px) {
+  body {
+    min-width: 100vw;
+    min-height: 100vh;
+    
+  }
+}
